@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="files/img/coding.ico" type="image/x-icon">
+    <title>Primeiros passos em HTML e CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F9F9F9;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Meus primeiros passos em HTML</h1>
+    <p>
+        Olá! Eu me chamo Diogo e venho por meio desse documento demonstrar minha evolução gradual em conhecimentos adquiridos em HTML e CSS<br> 
+        No início vamos começar com HTML, deixando bem definido o conceito restrito a <strong>contéudo</strong> e gradualmente adcionando  conceitos    voltados a<br>
+        <strong>design/estilo</strong> com CSS.
+    </p>
+	<h2>Parágrafos</h2>
+    <p>
+        Podemos escrever paragrafotos de todos os jeitos, basta deixa-lo dentro <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code> respectivamente.
+    </p>
+    <h2>Quebras de linha</h2>
+	<p>
+        Se precisar quebrar as linhas utilizamos a tag <code>&lt;br&gt;</code>.<br>
+    </p>
+    <h2>Hierarquia de títulos</h2>
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <p>
+        Um <code>&lt;h1&gt;</code> significa que esse é um assunto principal e é sobre ele que vamos escrever.<br> Já o 
+        <code>&lt;h2&gt; </code>significa que esse é um sub-assunto do <code>&lt;h1&gt;</code> que está imediatamente acima dele.<br> O
+        <code>&lt;h3&gt;</code>  significa que esse é um sub-assunto do <code>&lt;h2&gt;</code>  que está acima dele. E assim sucessivamente até o <code>&lt;h6&gt;</code>.
+    </p> 
+	<h2>Simbolos especiais</h2>
+    <p>
+        Vamos adcionar simbolos especiais:
+       &rarr; &uarr; &darr; &larr; &reg; &copy; &trade; &euro; &real; &Delta; &sum;
+    </p>
+    <p>
+        Vamos adicionar alguns emojis: &#x1F913; &#128512; &#128513; &#128514; &#128516; 
+    </p>
+    <h2>Adicionando imagens</h2>
+    <img src="files/img/html200.png" alt="logo html5"> <!--Foto do Creative Commons livre de direitos autorais-->
+    <img src="files/img/css200.png" alt="logo CSS3"> <!--Foto do Creative Commons livre de direitos autorais-->
+    <h1>Principais formatações</h1> 
+    <h2>Semântica</h2>
+    <p>
+        De acordo com o dicionário <strong>Michaelis</strong>: <q>Semântica é o significado dos vocábulos, 
+        por oposição à sua <strong>forma</strong>.</q><br>
+        Com isso, a maior mudança da HTML4 para a HTML5 é o acréscimo da semântica aos elementos, trazendo significado mais forte. Tags <br>
+        que remetiam mais a <strong>forma</strong> podem ser melhor representadas com CSS. A exemplo disso, existem tags que ainda funcionam hoje em dia,<br> mas estão prestes a serem consideradas obsoletas, como as tags <code>&lt;font&gt;</code> e <code>&lt;center&gt;</code>. E existem outras que simplesmente foram excluídas das<br> versões mais atuais da HTML5, como é o caso do <code>&lt;applet&gt;</code> e <code>&lt;blink&gt;</code>. 
+    </p>
+    <h2>Negrito e Itálico</h2>
+    <p>
+        No texto, podemos utilizar o <strong>negrito</strong> para demonstrar força.<br>Para isso, utilizamos a tag 
+        <code>&lt;strong&gt;</code> com fechamento <code>&lt;/strong&gt;</code>.
+    </p>
+    <h2>Texto deletado</h2> 
+    <p>        
+         Para fazer a anulação do texto é utilizada a tag <code>&lt;/del&gt;</code>, que significa que o texto está ali, pode até ser lido,<br> mas deve ser desconsiderado pelo leitor. <del>Exatamente como estou fazendo</del>. 
+    </p>
+    <h2>Texto inserido</h2>
+    <p>
+        O <ins>texto inserido</ins> é o exato oposto do <del>texto deletado</del> que vimos anteriormente. Nesse caso, se colocarmos<br> um texto qualquer dentro de <code>&lt;ins&gt;</code> e <code>&lt;/ins&gt;</code>, estamos dizendo que o texto está ali, deve ser lido e você deve prestar atenção nele.
+    </p>
+    <h2>Marcação de texto</h2>   
+    <p>
+        Esse tipo de marcação serve para você marcar uma parte do texto na qual você quer dar uma ênfase descomunal,<br> já que se trata de um trecho <mark>muito valioso</mark> para você. Iremos utilizar a tag <code>&lt;mark&gt;</code>...<code>&lt;/mark&gt;</code>
+    </p>
+    <h2>Textos sobrescrito e subscrito</h2>
+    <p>
+        Quantas vezes você tentou escrever um x<sup>2</sup> ou um H<sub>2</sub>O em um documento e ficou na dúvida de como fazer pra esses<br> números ficarem pequeninos ali em cima ou embaixo. No HTML é utilizada a tag <code>&lt;sup&gt;</code>...<code>&lt;/sup&gt;</code> e <code>&lt;sub&gt;</code>...<code>&lt;/sub&gt;</code>.
+    </p>
+    <h2>Trechos de código</h2>
+    <p>Para compartilhar textos de código fonte existe a tag <code>&lt;code&gt;</code> onde você pode delimitar seu código. A principal vantagem no uso dessa<br> tag é a o valor semântico que ela representa, indicando ao navegador que se trata de um código de computador. Porém, existe também<br> um efeito visual, pois as letras ficam no modo mono-espaçadas (monospace), o que facilita bastante a leitura do código. Veja como exemplo:</p>   
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f"O número {num} é 'PAR')
+            else:
+                print(f"O número {num} é 'IMPAR')
+                print(FIM DO PROGRAMA)
+        </code>
+    </pre>
+    <p><strong>Obs:</strong> Foi utilizada a tag HTML chamada <code>&lt;pre&gt;</code>, para manter o texto pré-formatado mantendo sua identação.</p>
+    <h2>Citações</h2>
+    <p>
+        Normalmente, uma citação aparece entre aspas ou com as margens deslocadas em relação ao texto. Para as citações mais curtas e geramente<br> enquantradas no meio de parágrafos, vamos utilizar a tag <code>&lt;q&gt;</code>...<code>&lt;/q&gt;</code> que automaticamente será acrescido as aspas. Já tem citações mais<br> longas com textos deslocados levemente para a direita iremos utilizar a tag <code>&lt;blockquote&gt;</code>...<code>&lt;blockquote&gt;</code> sendo opcional acrescentar o link<br> do texto original com parametro <code>cite</code> denro da tag. Vejamos:
+    </p>
+    <blockquote cite ="https://www.google.com.br/books/edition/O_conde_de_Monte_Cristo/xdfkDwAAQBAJ?hl=pt-BR&gbpv=1&dq=o+conde+de+monte+cristo&printsec=frontcover">
+        A vida é uma tempestade (...) Um dia você está tomando sol e no dia seguinte<br> o mar te lança contra as rochas. O que faz de você um homem é o que você faz quando a tempestade vem.
+    </blockquote>
+
+    <h2>Listas com HTML5</h2>
+    <h3>Listas ordenadas</h3>
+
+    <p>
+    Para criar uma <em>ordered list</em>, vamos usar a tag <code>&lt;ol&gt;</code>...<code>&lt;/ol&gt;</code> para delimitar a lista e <code>&lt;li&gt;</code> (list item) para identificar cada item da lista.<br> A tag <code>&lt;li&gt;</code> a parir do HTML5 tem o seu fechamento opcional. Também podemos usar o parametro type na tag <code>&lt;o&gt;</code>. Ficando desse modo: <code>&lt;ol type"A"&gt;</code>.<br>No parâmetro type temos as seguintes opções:
+    </p>
+    <ul>
+        <li>1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, …</li>
+        <li>A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, …</li>
+        <li>a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, …</li>
+        <li>I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, …</li>
+        <li>i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, …</li>
+    </ul>
+    <p>
+        <strong>Obs:</strong> conforme mencionei acima, o valor padrão da tag <code>&lt;ol&gt;</code> é a contagem com números inteiros.<br>
+        Ex:
+    </p>
+    <ol>
+        <li>Acordar
+        <li>Tomar café
+        <li>Ir ao trabalho
+    </ol>
+    <h3>Listas não ordenadas</h3>
+
+    <p>
+        Já as <strong><em>unordered lists</em></strong>, se caracterizam por sua ordem não interfirir no significado da lista. A tag utilizada será
+        <code>&lt;ul&gt;</code>...<code>&lt;/ul&gt;</code>. O marcador padrão<br> é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade type da tag <code>&lt;ul&gt;</code> com os seguintes valores:
+    </p>
+
+    <ul>
+        <li>disc - padrão. Uma bola preta totalmente pintada<br>
+        <li>circle - Uma bola com uma borda preta e sem preenchimento<br>
+        <li>square - Um pequeno quadrado preto totalmente pintado<br>
+    </ul>
+    <ul type="circle">
+        <li>Acordar
+        <li>Tomar café
+        <li>Ir ao trabalho
+    </ul>
+    <h3>Listas misturadas</h3>
+
+    <p>Podemos também criar listas mistas, configurando listas dentro de outras listas. Veja o exemplo a seguir: </p>
+
+    <ul>
+        <li>Nitendinho
+        <ol>
+            <li>Mario Bros</li>
+            <ul>
+                <li>Super Mario Bros 3</li>
+                    <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+                <ul><li>Ninja Gaiden iii</ul>
+        </ol>
+        <li>Super Nitendinho</li>
+        <ol>
+            <li>Super Mario World</li>
+                <li>Donkey Kong</li>
+            <ul>
+                <li>Donkey Kong Counrty III</li>
+                    <li>Diddy's Kong Quest</li>
+            </ul>
+        </ol>
+        <li>Playstation 1</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul>
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul><li>Simphony of the Nigth</li></ul>
+        </ol>
+    </ul>
+    <h3>Lista de Deﬁnições</h3>
+    
+    <p>
+        As listas de definições são como um dicionário, temos os termos e as suas descrições. É uma lista sem demarcadores,<br> mas bem útil em alguns casos. A lista de definição fica dentro da tag  <code>&lt;dl&gt;</code>...<code>&lt;/dl&gt;</code> e cada termo é um <code>&lt;dt&gt;</code>,<br> logo acompanhado da descrição com a tag <code>&lt;dd&gt;</code>. As tags de termo e descrição assim como as listas anteriores,<br> tem seu fechamento opcional de acordo com a referência oficial da HTML5. Veja o exemplo:
+    </p>
+    <dl>
+        <dt>HMTL</dt>
+        <dd>Linguagem de marcação utilizada para criar conteúdo em sites.</dd>
+        <dt>CSS</dt>
+        <dd>É uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na linguagem de marcação.</dd>
+        <dt>JavaScript</dt>
+        <dd>É uma linguagem de programação utilizada principalmente na criação de interatividade em sites.</dd>
+    </dl>
+    <h2>Links e ancoras em HTML5</h2>
+    <p>
+        Para criar um hyperlink, devemos criar âncoras através da tag <code>&lt;a&gt;</code>. O principal atributo dessa tag é o <code>href</code>, que cria uma referência hipertexto. Vamos ver um exemplo simples: 
+    </p>
+    <h3>Criando um link</h3>
+    <a href="https://github.com/diogobasilio">Acesse o meu pefil GitHub</a>
+    <p>
+        Outro atributo importante é a ancora <code>hreflang</code> que permite indicar qual o idioma princial do site. Isso vai permitir que os navegadores saibam como lidar caso o visitante opte automaticamente por tradução.
+    </p>
+    a href="https://www.w3schools.com/html/html_intro.asp" hreflang="en">Site da w3schools (em Inglês)</a>
+
+    <p>
+        Por padrão ao clicar nos links, visitante sairá do site atual, e na mesma guia, irá ser direcionado para o site do link. E se quiséssemos que o visitante continue na nossa página abrindo a nova página em outra guia? Nesse caso utilizaremos dentro da tag de ancora o atributo <code>target</code>.
+    </p>
+    <p>
+        O atributo <code>target</code> suporta os seguintes valores:
+    </p>
+    <ul>
+        <li><code>_blank</code> vai abrir o link em uma nova janela em branco</li>
+        <li><code>_self</code> vai abrir o link na janela ou frame atual (padrão)</li>
+        <li><code>_top</code> vai desfazer todos os frames e abrir o destino no navegador completo</li>
+        <li></li><code>_parent</code> similar ao uso do _top em uma referência à janela mãe <li>nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir</li>
+    </ul>
+    <p>
+        Como o uso de frames é uma técnica quase em desuso, vou exeplificar apenas nas duas primeiras opções <code>_blank</code> e <code>_self</code>.
+    </p>
+    <p>
+        <a href="https://github.com/diogobasilio" target="_blank">Abrir perfil GitHub em uma nova janela</a><br>ou<br>
+        <a href="pagina2.html" rel="next">Contiar navegando no site</a>
+    </p>
+
+    <p>
+        Existe um recuso interessante que permite identificar qual a natureza do destino usando o atributo <code>rel</code>. Esse atributo aceitas vários valores, dentre eles os mais utilizados são:
+    </p>
+    <ul type="square">
+        <li><code>next</code> indica que o link é para a próxima parte do documento atual</li> 
+        <li><code>prev </code>indica que o link é para a parte anterior do documento atual</li>
+        <li><code>author</code> indica que é um link para o site do autor do artigo atual</li>
+        <li><code>external</code> indica que é um link para outro site que não faz parte do site</li> 
+        <li><code>nofollow</code> Tem ocasiões em que você quer linkar para outro site, mas<br> você não quer transferir nenhum relevância pra ele. Ou seja, sem indexação pelo Google.</li>
+    </ul>
+    <p>
+        <a href="https://github.com/diogobasilio" target="_blank" rel="external">Abrir perfil GitHub em uma nova janela</a><br>ou<br>
+        <a href="pagina2.html" target="_self" rel="next">Ir para segunda página</a>
+    </p>
+    <h3>Download de arquivos</h3>
+
+    <p>Para download de arquivos utilizaremos o mesmo conceito de criação de links com <code>&lt;a href=""&gt;&lt;/a&gt;&lt;/p&gt;</code> seguidos de parêmetro <code>download</code> e <code>type</code>. Veja alguns tipos:</p>
+    <ul type="square">
+        <li>application/zip</li>
+        <li>text/html</li>
+        <li>text/css</li>
+        <li>text/javascript</li>
+        <li>video/mp4</li>
+        <li>video/H264</li>
+        <li>video/JPEG</li>
+        <li>audio/aac</li>
+        <li>audio/mpeg</li>
+        <li>font/ttf</li>
+        <li>image/jpeg</li>
+        <li>image/png</li>
+    </ul>
+
+    <p>Aqui são arquivos para exemplificar:</p>
+
+    <a href="files/download/pdf.rar" download="files/download/pdf.rar" type="application/zip">Baixar PDF</a><br>
+    <a href="files/download/computer-339836_1280.jpg" download="files/download/computer-339836_1280.jpg" type="image/jpeg">Baixar imagem</a>
+
+    <h2>Mídias em HTML5</h2>
+    <h3>Imagens dinâmicas</h3>
+
+    <p>
+        Atualmente podemos acessar sites em diversos tipos de dispositivos: notbooks, tables, smartphones e até TVs. Devido a essa grande variedade de tamanho de telas,<br> é fundamental que a depender do dispositivo, o site se adapte ao tamanho de tela. Embora possamos redimencionar imagens forçadamente com CSS, essa prática<br> não fazer que o tamanho (em bytes) diminua também. Consequentimente o consumo de dados aumentará, deixando o site pesado e impactando diretamente na experiência do usuário.
+    </p>
+    
+    <p>Para exemplificar isso usaremos 3 imagens com diferentes tamanhos: P (pequeno), M (médio) e G(grande). Na pratica, elas seriam idênticas, alterando somente seu tamanho.<br> Se você estiver no smarphone, provavelmente você estará vendo a imagem com a letra "P" (imagem pequena). Para que você possa ver essa muçança na imagem do bebê, basta<br> abrir essa mesma pagina web num dispositivo com a tela maior ou simplesmente no computador, diminua gradualmente o tamanho do seu navegador e perceberá a mudança nos três níveis: pequeno, médio e grande.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="files/img/photo-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="files/img/photo-m.png" type="image/png">
+        <img src="files/img/photo-g.png" alt="imagem flexível">
+    </picture>
+
+
+    <h2>Reproduzindo Áudio</h1>
+    <p>Para adicionar áudio no HTLM5 basta adicionar a tag <code>&lt;audio&gt;</code> junto com o atributo <code>&lt;preload&gt;</code> e alguns <code>&lt;souce&gt;</code> para tocar qualquer áudio.<br>
+       para que o arquivo de áudio seja compatível com a maioria dos navegadores, usaremos 2 formatos: mp3 e ogg.<br> Todos mantendo qualidade máxima de 128 kbps
+       preservando também um consumo baixo de dados e a experiência do usuário.<br></p>
+    <audio preload="metadata" controls>
+        <source src="files/music/Snake on the Beach - Nico Staf.mp3" type="audio/mpeg"> <!--O áudio utilizado é da biblioteca Youtube.com sem qualquer atribuição ou direito autoral-->
+        <source src="files/music/Snake on the Beach - Nico Staf .ogg" type="audio/ogg">
+        <p>Desculpe. Seu navegador não consegue reproduzir áudio. <a href="files/music/Snake on the Beach - Nico Staf.mp3">Clique aqui para baixar o arquivo em MP3.</a></p>
+    </audio>
+    <p>Primeiro o navegador tentará executar utilizando o arquivo mp3, caso não seja compatível,<br> tentará executar no formato ogg e se ainda assim não for compatível, exibirá a menssagem<br> que o navegador não é compatível com arquivos de áudio e fornecerá um link de downalod do arquivo mp3.</p>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>
+        Para adicionar vídeo no HTLM5 basta adicionar a tag <code>&lt;video&gt;</code> junto com o atributo <code>&lt;width&gt;</code> (para redimencionar), <code>&lt;controls&gt;</code> e alguns <code>&lt;souce&gt;</code> para exucutar vídeos.<br>
+           para que o arquivo de vídeo seja compatível com a maioria dos navegadores, usaremos 4 formatos na respectiva ordem indo do menor arquivo<br> (em kbps) para o maior, tentando sempre executar um arquivo com menor tamanho. Os formatos são: m4v, webm, ogv e mp4.
+    </p>
+    <video width="400" poster="files/img/world.png" controls>
+        <source src="files/video/video.m4v" type="video/m4v">
+        <source src="files/video/video.mp4" type="video/mp4">
+        <source src="files/video/video.webm" type="video/webm">
+        <source src="files/video/video.ogv" type="video/ogv">
+        <p>Desculpe! Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <p>O vídeo acima é só um demonstrativo que o vídeo pode ser adicionado diretamento no servidor de hospedagem.<br>
+    Porém essa não é uma prática recomendada porque cada execução do vídeo irá gerar um consumo de dados no servidor deixando economicamente inviável.</p>
+
+    <h2>Inserindo vídeos do Youtube</h2>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/DSHAg742rTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Já desse modo o vídeo está hospedado no youtube sem causar custos adicionais de dados.</p>
+
+</body>
+</html>
